@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            background-color: #99c1b9; /* seafoam green background */
+            font-family: 'Playfair Display', serif; /* Playfair Display font */
+        }
+         header {
+		  display: flex;
+		   justify-content: space-between;
+		   align-items: center;
+		   background-color: #000;
+		   color: #fff;
+		   padding: 10px 20px;
+		   font-size: 24px;
+		   width: 100%; 
+		   box-sizing: border-box; 
+		}
+		
+		header .wiki {
+		 	margin-left: 600px;  
+		    margin-right: auto; 
+		}
+		
+		header .household 
+		{
+		   margin-right: 10px;
+		}
+		
+		header .logout {
+		    margin-left: 10px;
+		}
+		
+		header .login {
+		    margin-left: 10px;
+		}
+		
+		header .household a,
+		header .login a,
+		header .logout a {
+		    color: inherit;
+		    text-decoration: none;
+		    font-size: 16px;
+		}
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* increased min width of columns */
+            gap: 20px;
+            padding: 25px;
+        }
+        .grid-item {
+            background-color: #fff; /* white background for grid items */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* subtle shadow effect */
+            text-align: center;
+            padding: 30px; /* increased padding for more space inside the box */
+            border: 2px solid #000; /* black border for distinction */
+        }
+        .grid-item img {
+            width: 100%; /* make image responsive to container width */
+            height: auto; /* maintain aspect ratio */
+            border-bottom: 2px solid #000; /* black border at the bottom of the image */
+        }
+        .grid-item h3 {
+            margin: 15px 0; /* increased spacing around the title */
+        }
+        .grid-item p {
+            font-size: 1em; /* adjusted font size for the description */
+        }
+        .grid-item a {
+            display: block;
+            margin-top: 15px; /* increased margin-top for better spacing */
+            text-decoration: none; /* no underline for links */
+            color: #000; /* black text for links */
+            padding: 15px 0; /* increased padding for taller button */
+            background-color: #f4f4f4; /* light gray background for the button */
+            border: none; /* no border for links that are buttons */
+        }
+        .grid-item a:hover {
+            background-color: #e2e2e2; /* slightly darker gray when hovered */
+        }
+    </style>
+</head>
+<body>
+    <header>
+  		<div class="wiki">SUITE-SYNC Wiki Site</div>
+        <div class="login"><a href="login.html">Login</a></div>
+    </header>
+    <div class="grid-container">
+        <!-- Add as many .grid-item divs as needed to fill the page -->
+        <!-- Example of a grid item -->
+        <div class="grid-item">
+            <img src="assets/img/Clean-Kitchen.jpg" alt="Clean Kitchen">
+            <h3>Clean Your Kitchen</h3>
+            <p>Click to read for college kitchen cleaning tips on WikiHow!</p>
+            <a href="https://www.wikihow.com/Clean-a-Kitchen" target="_blank">Read Here</a>
+        </div>
+        <!-- Copy and paste the below block for more grid items, replace # with numbers -->
+        <!-- Start Copy from here -->
+<div class="grid-item">
+    <img src="assets/img/Vacuum.jpg" alt="Vacuum Cleaner">
+    <h3>Vacuums</h3>
+    <p>Very affordable portable vacuum! Compact and great for college students, sold at Target.</p>
+    <a href="https://www.target.com/p/dirt-devil-scorpion-boost-bundle-corded-hand-vacuum-sd30026bdi/-/A-81953894#lnk=sametab" target="_blank">Buy Here</a>
+</div>
+<!-- ... repeat for each grid item ... -->
+<div class="grid-item">
+    <img src="assets/img/DishSoap.jpg" alt="Dish Soap">
+    <h3>Dish Soap</h3>
+    <p>Meyer's Clean Day (Natural) Liquid Dish Soap sold at Target. </p>
+    <a href="https://www.target.com/p/mrs-meyer-39-s-clean-day-lemon-verbena-liquid-dish-soap-16-fl-oz/-/A-13315175#lnk=sametab" target="_blank">Buy Here</a>
+</div>
+        <!-- End Copy to here -->
+                <!-- Start Copy from here -->
+        <div class="grid-item">
+            <img src="assets/img/TrashBag.jpg" alt="Trash Bag">
+            <h3>Trash Bags</h3>
+            <p>Trash bags, flexible, non-leaking great for college dorms. Sold at target below.</p>
+            <a href="https://www.target.com/p/glad-tall-kitchen-drawstring-trash-bags-odorshield-13-gallon-febreze-fresh-clean-gray-50ct/-/A-14738952#lnk=sametab" target="_blank">Buy Here</a>
+        </div>
+        <!-- End Copy to here -->
+                <!-- Start Copy from here -->
+        <div class="grid-item">
+            <img src="assets/img/ToiletCleaner.jpg" alt="Toilet Cleaner">
+            <h3>Toilet Cleaners</h3>
+            <p>Clorox Toilet Bowl cleaner, contains bleach. Sold at Target Below</p>
+            <a href="https://www.target.com/p/clorox-ocean-mist-toilet-bowl-cleaner-clinging-bleach-gel/-/A-79389926?preselect=15804793#lnk=sametab" target="_blank">Buy Here</a>
+        </div>
+        <!-- End Copy to here -->
+                <!-- Start Copy from here -->
+        <div class="grid-item">
+            <img src="assets/img/Clorox-Wipes.jpg" alt="Clorox Wipes">
+            <h3>Clorox Wipes</h3>
+            <p>Clorox Wipes, kills 99.9% of bacteria. Great for wiping down furniture and other surfaces. Sold at target linked below!</p>
+            <a href="lhttps://www.target.com/p/clorox-fresh-scent-bleach-free-disinfecting-wipes/-/A-79389925?preselect=12969915#lnk=sametab" target="_blank">Buy Here</a>
+        </div>
+        <!-- End Copy to here -->
+                <!-- Start Copy from here -->
+        <div class="grid-item">
+            <img src="assets/img/Swiffer.jpg" alt="Swiffer">
+            <h3>Swiffer</h3>
+            <p>Wet and dry swiffer. Contains Sweeping Kit 1 Sweeper, 7 Dry Cloths, 3 Wet Cloths. Perfect bundle for college students to use to clean kitchens and other common spaces. Sold below!</p>
+            <a href="https://www.target.com/p/swiffer-sweeper-2-in-1-dry-wet-floor-mopping-and-sweeping-kit-1-sweeper-7-dry-cloths-3-wet-cloths/-/A-17316119#lnk=sametab" target="_blank">Buy Here</a>
+        </div>
+        <!-- End Copy to here -->        <!-- Start Copy from here -->
+        <div class="grid-item">
+            <img src="assets/img/Broom.jpg" alt="Broom">
+            <h3>Broom</h3>
+            <p>Portable broom and dust pan. Great size for storage in dorm room  or any space. Click the link below to purchase. </p>
+            <a href="https://www.target.com/p/hand-broom-and-dust-pan-set-made-by-design-8482/-/A-75564417#lnk=sametab" target="_blank">Buy Here</a>
+        </div>
+        <!-- End Copy to here -->
+                <!-- Start Copy from here -->
+        <div class="grid-item">
+            <img src="assets/img/Window-Cleaner.jpg" alt="Window Cleaner">
+            <h3>Window Cleaner</h3>
+            <p>Window cleaner spray, results in streak free windows! Click below to purchase now. </p>
+            <a href="https://www.target.com/p/windex-original-blue-glass-cleaner-spray-26-fl-oz/-/A-53411349#lnk=sametab" target="_blank">Buy Here</a>
+        </div>
+        <!-- End Copy to here -->
+        
+    </div>
+    <script src="wikisite.js" defer></script>
+</body>
+</html>

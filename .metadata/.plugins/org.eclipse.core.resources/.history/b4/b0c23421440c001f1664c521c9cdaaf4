@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sign Up Page</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="household">WELCOME TO SUITE-SYNC</div>
+		<div class="wiki"> <a href="wikisite.html">WikiSite</a></div>
+	</header>
+	<div class="signup">
+		<form class="signup-container">
+			<h1>Sign Up for your Household</h1>
+			<div class="input">
+				<label for = "name">Name</label>
+				<input type="text" id="name" name="name" required placeholder="Enter your name">
+			</div>
+			<div class="input">
+				<label for = "username">Username</label>
+				<input type="text" id="username" name="username" required placeholder="Enter your Username">
+			</div>
+			<div class="input">
+				<label for = "password">Password</label>
+				<input type="password" id="password" name="password" required placeholder="Enter your Password">
+			</div>
+			<div class="input">
+                <label for="confirm_password">Confirm Password</label>
+                <input type="password" id="confirm_password" name="confirm_password" required placeholder="Confirm your password">
+            </div>
+			<div id = "signup-error"></div>
+            <input class="button" type="submit" value="Submit">
+            <input type="button" onclick="location.href='login.html';" value="Already have an account?">
+            
+           
+		</form>
+		
+	</div>
+	<script src="signup.js"></script>
+</body>
+</html>

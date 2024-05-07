@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Household Tasks</title>
+<link rel="stylesheet" type="text/css" href="household.css">
+<script src="household.js"></script>
+</head>
+<body onload="connectWebSocket(); populateHome();">
+	<header>
+		<div class="household">SUITE-SYNC</div>
+		<div class="wiki">
+			<a href="wikisite.html">WikiSite</a>
+		</div>
+		<div class="logout">
+			<a href="index.html" id="logout">Logout</a>
+		</div>
+	</header>
+	<div id="header" class="header">
+		<!-- Integrated title with household info for better visual grouping -->
+		<div id="householdInfo" class="household-info">
+			<h1>
+				Welcome to <span id="name"></span>
+			</h1>
+			<p id="hid"></p>
+			<p id="memberlist"></p>
+		</div>
+		<!-- Progress bar -->
+		<div id="progressBarContainer">
+			<div id="progress"></div>
+		</div>
+	</div>
+	<div id="tasks" class="container">
+		<!-- Tasks will be dynamically inserted here -->
+	</div>
+	<!-- Popup for adding a task -->
+	<div id="buttonContainer" class="task-manager-container">
+		<div id="addTaskPopup" class="popup"  style="display: none">
+			<span class="close" onclick="closePopup()">&times;</span>
+			<span id="popup-text">Enter the Name of the Task</span>
+			<input type="text" id="taskName" placeholder="Task Name">
+			<button onclick="addTask()">Add</button>
+		</div>
+		<div class="buttonContainer">
+			<button onclick="openAddTaskPopup()">Add Task</button>
+			<button onclick="shuffleTasks()">Shuffle Tasks</button>
+		</div>
+	</div>
+	<script>
+		var ws;
+		function connectWebSocket() {
+			ws = new WebSocket("ws://localhost:8080/201backend/ws");
+			ws.onopen = function() {
+				console.log("Connected to WebSocket");
+			};
+			ws.onmessage = function(event) {
+				console.log("Message received: ", event.data);
+				if (event.data === "An update occurred") {
+					populateHome();
+				} else if (event.data === "An update in progress occurred") {
+					updateProgressBar();
+				}
+			};
+			ws.onclose = function() {
+				console.log("WebSocket closed");
+			};
+			ws.onerror = function(event) {
+				console.error("WebSocket error: ", event);
+			};
+		}
+	</script>
+</body>
+</html>
