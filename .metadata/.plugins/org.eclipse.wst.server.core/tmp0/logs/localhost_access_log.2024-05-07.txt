@@ -2430,3 +2430,14 @@
 0:0:0:0:0:0:0:1 - - [07/May/2024:01:42:52 -0700] "GET /201_final_project/login.html HTTP/1.1" 304 -
 0:0:0:0:0:0:0:1 - - [07/May/2024:01:42:52 -0700] "GET /201_final_project/login.js HTTP/1.1" 304 -
 0:0:0:0:0:0:0:1 - - [07/May/2024:01:42:52 -0700] "GET /201_final_project/style.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [07/May/2024:02:09:52 -0700] "GET /favicon.ico HTTP/1.1" 404 803
+0:0:0:0:0:0:0:1 - - [07/May/2024:02:09:53 -0700] "GET /201_final_project/login.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [07/May/2024:02:09:53 -0700] "GET /201_final_project/style.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [07/May/2024:02:09:53 -0700] "GET /201_final_project/login.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [07/May/2024:02:09:56 -0700] "POST /201_final_project/Login HTTP/1.1" 200 47
+0:0:0:0:0:0:0:1 - - [07/May/2024:02:09:56 -0700] "GET /201_final_project/household.html HTTP/1.1" 200 2094
+0:0:0:0:0:0:0:1 - - [07/May/2024:02:09:56 -0700] "GET /201_final_project/household.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [07/May/2024:02:09:56 -0700] "GET /201_final_project/household.css HTTP/1.1" 200 3234
+0:0:0:0:0:0:0:1 - - [07/May/2024:02:09:56 -0700] "POST /201_final_project/ProgressBar HTTP/1.1" 200 38
+0:0:0:0:0:0:0:1 - - [07/May/2024:02:09:56 -0700] "GET /201backend/ws HTTP/1.1" 404 809
+0:0:0:0:0:0:0:1 - - [07/May/2024:02:09:56 -0700] "POST /201_final_project/HouseholdPage HTTP/1.1" 200 526
