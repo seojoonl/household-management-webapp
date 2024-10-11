@@ -59,6 +59,7 @@ function completeTask(taskName) {
 		.then(data => {
 			if (data.status === "success") {
 				console.log("Task marked as completed.");
+				updateProgressBar();
 				populateHome();  // Refresh the list to show the updated button
 			} else {
 				alert("Error completing task");
@@ -77,6 +78,7 @@ function uncompleteTask(taskName) {
 		.then(response => response.json())
 		.then(data => {
 			if (data.status === "success") {
+				updateProgressBar();
 				console.log("Task marked as uncompleted.");
 				populateHome();  // Refresh the list to show the updated button
 			} else {

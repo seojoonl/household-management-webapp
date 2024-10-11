@@ -48,16 +48,15 @@
 	<script>
 		var ws;
 		function connectWebSocket() {
-			ws = new WebSocket("ws://localhost:8080/201backend/ws");
+			ws = new WebSocket("ws://localhost:8080/201_final_project/ws");
 			ws.onopen = function() {
 				console.log("Connected to WebSocket");
 			};
 			ws.onmessage = function(event) {
 				console.log("Message received: ", event.data);
 				if (event.data === "An update occurred") {
-					populateHome();
-				} else if (event.data === "An update in progress occurred") {
 					updateProgressBar();
+					populateHome();
 				}
 			};
 			ws.onclose = function() {
